@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .content-section { display: none; }
+        .active-section { display: block; }
+        .button { 
+            cursor: pointer; 
+            padding: 10px; 
+            display: inline-block; 
+            background: lightgray; 
+            margin: 5px; 
+            border-radius: 5px;
+        }
+        .button.active { background: gray; color: white; }
+    </style>
+</head>
+<body>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio Showcase</h2>
+        <div class="button-container">
+            <div class="button active" id="project">
+                <span class="icon">📁</span>
+                <span class="text">Projects</span>
+            </div>
+            <div class="button" id="certificates">
+                <span class="icon" style="color: black;">🎓</span>
+                <span class="text">Certificates</span>
+            </div>
+            <div class="button" id="tech_stack">
+                <span class="icon">💻</span>
+                <span class="text">Tech Stack</span>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="project-content" class="content-section active-section">
+            <h3>My Projects</h3>
+            <p>Details about projects go here.</p>
+        </div>
+        <div id="certificates-content" class="content-section">
+            <h3>My Certificates</h3>
+            <p>Details about certificates go here.</p>
+        </div>
+        <div id="tech_stack-content" class="content-section">
+            <h3>My Tech Stack</h3>
+            <p>Details about tech stack go here.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        // Initially show the first section
+        $(".content-section").hide();
+        $("#project-content").show();
+
+        $(".button").click(function () {
+            // Remove 'active' class from all buttons
+            $(".button").removeClass("active");
+            // Add 'active' class to the clicked button
+            $(this).addClass("active");
+
+            // Hide all content sections
+            $(".content-section").hide();
+
+            // Get the corresponding section ID and show it
+            let sectionId = $(this).attr("id") + "-content";
+            $("#" + sectionId).fadeIn();
+        });
+    });
+</script>
+
+</body>
+</html>

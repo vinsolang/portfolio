@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio VIN SOLANG</title>
+    <!-- link CSS -->
+     <link rel="icon" href="./assets/image/icons8-portfolio-64.png">
+     <link rel="stylesheet" href="./style.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen">
+            <div class="icons">
+                <div class="icon">
+                    <img src="./assets/image/icons8-my-computer-64.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./assets/image/icons8-git-50.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./assets/image/icons8-bird-50.png" alt="">
+                </div>
+            </div>
+            <div class="welcome-text">
+                <h1>Welcome To My <br> <span class="highlight">Portfolio Website</span></h1>
+            </div>
+        </div>
+    <section id="homepage">
+        <!-- --------------------------------------------------
+                            #Header
+        --------------------------------------------------  -->
+        <section id="header">
+            <div class="nav-bar">
+                <header class="header col-12">
+                    <div class="logo">
+                        <h1>
+                            <img style="width: 80px; height: 85px; border-radius: 50%;" src="./assets/img/IMG_1669.JPG" alt="">
+                        </h1>
+                    </div>
+                    <div class="menu">  
+                        <!-- Use Bootstrap navbar classes -->
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                ☰
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto"> <!-- ms-auto will align the menu to the right -->
+                                    <li class="nav-item">
+                                        <a type="button" id="home" class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a type="button" id="about" class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a type="button" id="skill" class="nav-link" href="#skills">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a type="button" id="portfolio" class="nav-link" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="download_cv">
+                        <a href="./cv.html">
+                            <button class="btn" id="viewCv">View  CV</button>
+                            <img style="width: 30px;" src="./assets/image/icons8-cv-50.png" alt="">
+                        </a>
+                    </div>
+                </header>
+            </div>
+        </section>        
+        <!-- --------------------------------------------------
+                            #Main Content
+        ------------------------------------------------------>
+        <!-- Home -->
+        <section id="main_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro hightlight">
+                            <h3> Vin Solang</h3>
+                            <h1>I'm <span id="changingText" style="color: rgb(9, 131, 131); font-size: 40px;">Web Developer</span></h1>
+                            <p>I'm a passionate front-end developer with a strong background in web design and development.</p>
+                            <a href="#"><button class="btn" style="background: blueviolet; color: #fff;" id="viewPortfolio">View Portfolio</button></a>
+                            <a href="./cv.html" class="cv">
+                                <button class="btn" id="viewCv">View CV</button>
+                                <img style="width: 30px;" src="./assets/image/icons8-cv-50.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img id="res" src="./assets/image/portfolio1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Me -->
+            <section id="about_me">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="row" id="row">
+                        <div class="col-md-6" id="col">
+                            <img src="./assets/img/lang2.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <h3 style="color: rgba(0, 0, 255, 0.786);">
+                                            <img src="./assets/image/icons8-experience.gif" alt="">
+                                            Experience
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                Used to create project in school form ETEC Center
+                                            </li>
+                                        </ul> 
+                                    </div>     
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <h3 style="color: rgba(0, 0, 255, 0.786);">
+                                            <img src="./assets/image/icons8-education-50.png" alt="">
+                                            Education
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                Studying at Royal University of Phnom Penh(RUPP) <br>
+                                                Major: Information Technology (Year 3)
+                                            </li>
+                                        </ul> 
+                                    </div>     
+                                </div>
+                                <div class="col-md-12" id="col-12">
+                                    <div class="card">
+                                        <p>
+                                             I have a strong foundation in web design and development,
+                                             with a particular interest in HTML, CSS, and JavaScript.
+                                             I am also proficient in using modern CSS features
+                                             and have experience with responsive design.
+                                        </p>
+                                    </div>     
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-12">
+                           <div class="card-text">
+                                <h3>
+                                    <img style="border-radius: 20;" src="./assets/image/icons8-training-50.png" alt="">
+                                    Training
+                                </h3>
+                                <ul>
+                                    <p>(2023-2024)</p>
+                                    <li>Graduated: Has successfully competed all requirements
+                                        for completion of the Computer Training Courses
+                                        in Backend PHP + Laravel / Project Courses 
+                                        Project PHP and  Project Laravel at Engineering of
+                                        Technology and Electronic Center (ETEC) 
+                                    </li>
+                                    <p>(2023-2024)</p>
+                                    <li>Graduated: Has successfully competed all requirements
+                                        for completion of the Computer Training Courses             
+                                        in Basic/Advance C/C++/OPP & Project Courses
+                                        at Engineering of Technology and Electronic 
+                                    Center (ETEC)              
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <!-- Skills -->
+            <section id="skillSection">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-2">
+                                <div class="my-skill">
+                                    <img width="30px" src="./assets/image/icons8-admin-settings-male-50.png" alt="">
+                                    <ul>
+                                        <li>Database Management</li>
+                                        <li>Front-end Web development</li>
+                                        <li>Back-end Web development</li>
+                                        <li>Algorithms and Flowchart</li>
+                                        <li>Program and Development</li>
+                                    </ul>
+                                </div>
+                                <div class="language">
+                                    <img width="30px" src="./assets/image/icons8-book-50.png" alt="">
+                                    LANGUAGE
+                                    <div class="language-skill">
+                                        <h6>Khmer</h6>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="language-skill">
+                                        <h6>English</h6>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width: 55%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-md-6">
+                            <div class="card-1">
+                                <img width="30px" src="./assets/image/icons8-computer-50.png" alt="Computer Icon">Computer
+                                <div class="skill">
+                                    <p>C/C++/OOP</p>
+                                    <p>Java (Basic)</p>
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>Bootstrap 5</p>
+                                    <p>jQuery</p>
+                                    <p>JavaScript</p>
+                                    <p>React JS</p>
+                                    <p>PHP</p>
+                                    <p>OPP</p>
+                                    <p>Laravel</p>
+                                    <p>SQL (MySQL)</p>
+                                    <p>Git</p>
+                                    <p>Google Site</p>
+                                    <p>Microsoft Office (Word, Excel, PowerPoint)</p>
+                                </div>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                </div>
+            </section>  
+            <!-- Portfolio -->
+            <section id="portfolioSection">
+                <div class="container">
+                    <h2>Portfolio Showcase</h2>
+                    <div class="button-container">
+                        <div class="button active" id="project">
+                            <span class="icon">📁</span>
+                            <span class="text">Projects</span>
+                        </div>
+                        <div class="button" id="certificates">
+                            <span class="icon">🎓</span>
+                            <span class="text">Certificates</span>
+                        </div>
+                        <div class="button" id="tech_stack">
+                            <span class="icon">💻</span>
+                            <span class="text">Tech Stack</span>
+                        </div>
+                    </div>
+            
+                    <!-- Content Sections -->
+                    <div id="project-content" class="content-section active-section">
+                        <div class="row">
+                            <div class="col-md-6 project-card">
+                                <img src="./assets/image/Ecommerce.png" alt="Project 1" class="project-image">
+                                <h3>Ecommerce Website</h3>
+                                <p>An Ecommerce website built with PHP, Laravel, HTML, CSS, Bootstrap, and JavaScript</p>
+                                <!-- <a href="#" class="btn">View Project</a> -->
+                                <a href="https://github.com/vinsolang/shoppingStore" class="btn">Github -></a>
+                            </div>
+                            <div class="col-md-6 project-card">
+                                <img src="./assets/image/music.png" alt="Project 2" class="project-image">
+                                <h3>Blue Star website</h3>
+                                <p>A Blue star website built with HTML, CSS, Bootstrap, JavaScript and PHP</p><br>
+                                <!-- <a href="#" class="btn">View Project</a> -->
+                                <a href="#" class="btn">Github -></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 project-card">
+                                <img src="./assets/image/ABA.png" alt="ABA Guid Line 1" class="project-image">
+                                <h3>ABA Guide Line</h3>
+                                <p>An ABA Guide Line built with using HTML CSS Bootstrap and JavaScript</p>
+                                <!-- <a href="#" class="btn">View Project</a> -->
+                                <a href="#" class="btn">Github -></a>
+                            </div>
+                            <div class="col-md-6 project-card">
+                                <img src="./assets/image/CMS-system.png" alt="Project 2" class="project-image">
+                                <h3>CMS System</h3>
+                                <p>A CMS System built with HTML CSS Bootstrap jQuery JavaScript and PHP</p>
+                                <!-- <a href="#" class="btn">View Project</a> -->
+                                <a href="https://github.com/vinsolang/economers" class="btn">Github -></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="certificates-content" class="content-section">
+                        <div class="row">
+                            <div class="col-md-6 project-card" id="certificat">
+                                <img src="./assets/img/photo_2025-02-10_22-11-11.jpg" alt="">
+                            </div>
+                            <div class="col-md-6 project-card" id="certificat">
+                                <img style="width: 500px;" src="./assets/img/image.png" alt="">
+                            </div>
+                            <div class="col-md-6 project-card" id="certificat">
+                                <img style="width: 500px;" src="./assets/img/cate2.jpg" alt="">
+                            </div>
+                            <div class="col-md-6 project-card" id="certificat">
+                                <img style="width: 500px;" src="./assets/img/cate1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tech_stack-content" class="content-section">
+                        <div class="tech-container">
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-html5-50.png" alt="HTML">
+                                <p>HTML</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-css3-50.png" alt="CSS">
+                                <p>CSS</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-javascript-50.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/image/icons8-git-50.png" alt="Tailwind CSS">
+                                <p>Github</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-react-js-64.png" alt="ReactJS">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-vite-48.png" alt="Vite">
+                                <p>Vite</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-bootstrap-48.png" alt="Bootstrap">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-java-94.png" alt="Java">
+                                <p>Java</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-php-80.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-mysql-24.png" alt="PHP">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="tech-card">
+                                <img src="./assets/icon/icons8-laravel-64.png" alt="Laravel">
+                                <p>Laravel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="contact">   
+            <div class="contact container   ">
+                <h2>Contact Me</h2>
+                <div class="row">
+                    <div class="col-md-6 project-card">
+                        <img style="width: 90px; height: 90px;" src="./assets/image/fb.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Project 1" class="project-image">
+                        <h3>Facebook Name: LA NG</h3>
+                        <p>Please, click button above to profile me</p>
+                        <a href="https://web.facebook.com/profile.php?id=100057841421973" class="btn">View Profile</a>
+                    </div>
+                    <div class="col-md-6 project-card">
+                        <img style="width: 90px; height: 90px;" src="./assets/image/Telegram.webp" alt="Project 2" class="project-image">
+                        <h3>Telegram Name: VIN SOLANG</h3>
+                        <p>Please, click button above to profile me</p>
+                        <a href="https://t.me/VINSOLANG" class="btn">Telegram</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 project-card">
+                        <img style="width: 90px; height: 90px;" src="./assets/image/call.avif" alt="Project 1" class="project-image">
+                        <h3>Mobile Phone Number</h3>
+                        <p>089696675</p>
+                        <p>0969122106(Telegram)</p>
+                    </div>
+                    <div class="col-md-6 project-card">
+                        <img style="width: 90px; height: 90px;" src="./assets/image/tik tok.png" alt="Project 2" class="project-image">
+                        <h3>TIK TOK Name: LANG-ឡាង</h3>
+                        <p>Please, click button above to profile me</p>
+                        <a href="https://www.tiktok.com/@si.lang97?lang=en" class="btn">Tik Tok</a>
+                    </div>
+                </div>
+            </div>         
+            </section> -->
+        <!-- --------------------------------------------------
+                            #Footer Content
+        ------------------------------------------------------>
+        <section id="footer">
+            <footer class="footer col-12">
+                <div class="copyright">
+                    <p>�� 2025 Vin Solang. All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+        </section>
+    <!-- Link JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
