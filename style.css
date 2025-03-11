@@ -743,6 +743,77 @@
 /* <!-- --------------------------------------------------
                             #Footer 
 --------------------------------------------------  --> */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: #00bcd4;
+    padding: 50px;
+}
+.portfolio img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 .copyright p{
     text-align: center;
+    margin-top: 20px;
+}
+.call{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.cellcard{
+    display: flex;
+    gap: 15px;
+}
+.cellcard img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.cellcard p{
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.smart{
+    display: flex;
+    gap: 15px;
+}
+.smart img{
+    width: 30px;
+    height: 300px;
+    border-radius: 50%;
+}
+.smart p{
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.call img{
+    width: 50px;
+    height: 50px;
+
+}
+.contect a img{
+    gap: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* ===== Responsive ===== */
+@media (max-width: 767px) {
+    .footer{
+        display: block;
+        justify-content: space-between;
+    }
 }
