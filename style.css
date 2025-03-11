@@ -308,18 +308,6 @@
     font-size: 18px;
     color: #2b9eb3;
 }
-@media (max-width: 768px) {
-   
-    .col-md-12{
-        width: 100%;
-        height: auto;
-        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-        /* background: rgba(128, 128, 128, 0.148); */
-    }
-    .intro h3{
-        text-align: center;
-    }
-}
 #col-12{
     margin: 50px 0px 0px 0px;
     border-radius: 20px;
@@ -494,21 +482,264 @@
     background-color:rgba(0, 0, 0, 0.433);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-    .button-container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        background: none;
-        border: none;
-    }
-
+/*  @@@@ Responsive Design */
+ /*=============== Container ======*/
+ /* Default styles for large screens (laptops, desktops) */
+.container {
+    max-width: 1200px;
 }
 
+/* Tablets (iPads, small laptops) */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}
+
+/* Smaller tablets and large phones */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+/* Smartphones (iPhone, Android) */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    #changingText {
+        font-size: 30px;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+/* Small phones (iPhone SE, older Androids) */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+/* ====== About me ====== */
+/* Default styles for large screens (laptops, desktops) */
+#about_me .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#about_me img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablets (iPads, small laptops) */
+@media screen and (max-width: 1024px) {
+    #about_me .container {
+        max-width: 900px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+
+/* Smaller tablets and large phones */
+@media screen and (max-width: 768px) {
+    #row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-md-6, .col-md-12 {
+        width: 100%;
+    }
+    #about_me .card {
+        padding: 15px;
+        margin: 10px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+}
+
+/* Smartphones (iPhone, Android) */
+@media screen and (max-width: 480px) {
+    #about_me .container {
+        max-width: 95%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    #changingText {
+        font-size: 30px;
+    }
+    #about_me .card {
+        padding: 10px;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+/* Small phones (iPhone SE, older Androids) */
+@media screen and (max-width: 360px) {
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p, li {
+        font-size: 14px;
+    }
+}
+/* ========== Skill ====== */
+/* Tablets (iPads, small laptops) */
+@media screen and (max-width: 1024px) {
+    #skillSection .container {
+        max-width: 900px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+
+/* Smaller tablets and large phones */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .card-1, .card-2 {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* Smartphones (iPhone, Android) */
+@media screen and (max-width: 480px) {
+    #skillSection .container {
+        max-width: 95%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    .progress {
+        height: 10px;
+    }
+    .skill p {
+        font-size: 14px;
+    }
+    .card-1, .card-2 {
+        padding: 10px;
+    }
+}
+
+/* Small phones (iPhone SE, older Androids) */
+@media screen and (max-width: 360px) {
+    h2 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    .skill p {
+        font-size: 12px;
+    }
+}
+/* ===== Portfolio ========== */
+/* Tablets (iPads, small laptops) */
+@media screen and (max-width: 1024px) {
+    #portfolioSection .container {
+        max-width: 900px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .project-card {
+        padding: 15px;
+    }
+}
+
+/* Smaller tablets and large phones */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Smartphones (iPhone, Android) */
+@media screen and (max-width: 480px) {
+    #portfolioSection .container {
+        max-width: 95%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .project-card {
+        padding: 10px;
+    }
+    .tech-card {
+        width: 80px;
+    }
+}
+
+/* Small phones (iPhone SE, older Androids) */
+@media screen and (max-width: 360px) {
+    h2 {
+        font-size: 24px;
+    }
+    .button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
 /* <!-- --------------------------------------------------
                             #Footer 
 --------------------------------------------------  --> */

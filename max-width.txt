@@ -1,0 +1,41 @@
+/* iPhones (Portrait & Small Phones) */
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Android Phones & Larger iPhones */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* iPads & Android Tablets (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* iPads & Android Tablets (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+/* Laptops & Small Desktops */
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    body {
+        background-color: lightsalmon;
+    }
+}
+
+/* Large Screens & Desktops */
+@media only screen and (min-width: 1601px) {
+    body {
+        background-color: lightgray;
+    }
+}
