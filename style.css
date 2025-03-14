@@ -576,26 +576,27 @@
     .col-md-6, .col-md-12 {
         width: 100%;
     }
-    .row{
-        text-align: center;
-    }
-    .row .col-md-6 img{
-        display: block;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        height: auto;
-    }
-    .col-md-6 .card{
-        padding: 20px;
-        margin: 10px;
-    }
     #about_me .card {
         padding: 15px;
         margin: 10px;
     }
     h3 {
         font-size: 28px;
+    }
+    .row{
+        text-align: center;
+    }
+    .row .col-md-6 #picture{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+    .col-md-6 .card{
+        padding: 20px;
+        margin: 10px;
     }
 }
 
@@ -619,6 +620,20 @@
     button {
         width: 100%;
     }
+    .row{
+        text-align: center;
+    }
+    .row .col-md-6 #picture{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
+    .col-md-6 .card{
+        padding: 20px;
+        margin: 10px;
+    }
 }
 
 /* Small phones (iPhone SE, older Androids) */
@@ -628,6 +643,20 @@
     }
     h3 {
         font-size: 20px;
+    }
+    .row{
+        text-align: center;
+    }
+    .row .col-md-6 #picture{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
+    .col-md-6 .card{
+        padding: 20px;
+        margin: 10px;
     }
     p, li {
         font-size: 14px;
